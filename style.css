@@ -1,0 +1,43 @@
+
+table{
+  position: relative;
+}
+
+#board{
+  width: 360px;
+  height: 360px;
+  border:9px solid gray;
+  position: relative;
+}
+
+tr{
+  position: relative;
+}
+td{
+  position: relative;
+  background-color: lightgray;
+}
+.field{
+  background: gray;
+}
+.checker{
+  width: 94%;
+  height: 94%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+.checker:hover{
+  border:2px solid lightblue;
+
+}
+.wS{
+  border: 1px solid #000;
+  background-color: white;
+}
+.dS{
+  border: 1px solid #000;
+  background-color: lightblue;
+}
