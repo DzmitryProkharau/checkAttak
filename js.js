@@ -54,12 +54,12 @@ function attacCheck(x, y) {
         field3 = arrABC[letterABC-1]+(+field3.charAt(1)-1);
         indexABC(field4);
         field4 = arrABC[letterABC+1]+(+field4.charAt(1)-1);
-        if (
-            !document.getElementById(field1).firstChild||
+        if (!document.getElementById(field1).firstChild||
             !document.getElementById(field2).firstChild||
             !document.getElementById(field3).firstChild||
             !document.getElementById(field4).firstChild ) {
-              ind = true;
+            ind = true;
+            simpleAttak(y);
         }
       }
       console.log(ind);
@@ -69,6 +69,7 @@ function attacCheck(x, y) {
     }
   } catch (e) {}
 }
+
 
 function indexABC(x) {
   for (var i = 0; i < arrABC.length; i++) {
